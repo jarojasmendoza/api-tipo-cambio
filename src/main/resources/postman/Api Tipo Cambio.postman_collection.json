@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "9a2aecda-0956-473f-bda8-8aaa0453ed02",
+		"name": "Api Tipo Cambio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21267374",
+		"_collection_link": "https://interstellar-shuttle-690660.postman.co/workspace/Personal~a67e68b9-be61-4f6d-8870-ad14050c2106/collection/21267374-9a2aecda-0956-473f-bda8-8aaa0453ed02?action=share&source=collection_link&creator=21267374"
+	},
+	"item": [
+		{
+			"name": "Realizar cambio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"monto\" : 10,\r\n    \"monedaOrigen\":\"USD\",\r\n    \"monedaDestino\":\"PEN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/convertir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"convertir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar cambios",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
